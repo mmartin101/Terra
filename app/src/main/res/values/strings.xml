@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Terra Wallpapers</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_faq">FAQ</string>
+
+
+    <!--View Strings-->
+    <string name="fetching_images">Fetching Wallpaper</string>
+    <string name="setting_wallpaper">Setting Wallpaper</string>
+    <string name ="wallpaper_imagebutton_content_description">Set Wallpaper</string>
+    <string name ="save_imagebutton_content_description">Save to Gallery</string>
+    <string name ="settings_imagebutton_content_description">Settings</string>
+    <string name ="wallpaper_imageview_content_descirption">Wallpaper</string>
+    <string name ="faq_imagebutton_content_description">Faq</string>
+    <string name="switch_on">On</string>
+    <string name ="switch_off">Off</string>
+    <string name="automatic_mode_descirption">Turn on automatic mode to download and set a new wallpaper every 24 hours.</string>
+    <!-- FaqActivity view Strings -->
+    <string name ="one_picture">Why is there only one picture?</string>
+    <string name ="one_picture_explanation">In order to ensure the highest quality of wallpapers, I decided it would be better to provide one high quality wallpaper per day. </string>
+    <string name="where_can_I_find_more">Where do these images come from?</string>
+    <string name ="where_can_I_find_more_explanation"><a href="https://reddit.com/r/earthporn">reddit.com/r/earthporn</a></string>
+    <string name="other_subreddits">Will you consider adding other suberddits sources in the future?</string>
+    <string name="other_subreddits_explanation">It\'s a possibility. As of now, other subreddits do not recieve as many quality submissions per day.</string>
+
+    <!-- Toast Strings -->
+    <string name ="Wallpaper_Set">Wallpaper Has Been Set!</string>
+    <string name ="Wallpaper_Error">Error Setting The Wallpaper</string>
+    <string name ="Wallpaper_Saved">Wallpaper Saved To Gallery</string>
+    <string name="Wallpaper_save_error">Error Saving Wallpaper</string>
+    <string name="title_activity_activity_settings">activity_settings</string>
+
+    <!-- Error Messages -->
+    <string name ="Out_Of_Images">Unable to find a suitable Wallpaper.</string>
+    <string name="alert_dialog_title">Failed to download image</string>
+    <string name="alert_dialog_message">Please check your connection or try again later.</string>
+    <string name ="alert_dialog_positive_bt">Try again?</string>
+    <string name ="alert_dialog_negative_bt">Close</string>
+
+
+</resources>

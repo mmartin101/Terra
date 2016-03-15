@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dummy_Image_View"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:contentDescription="@string/wallpaper_imageview_content_descirption"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Actual_Image_View"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/wallpaper_imageview_content_descirption"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fetching_images"
+        android:id="@+id/progressTextView"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="@dimen/Image_Button_Size"
+        android:layout_height="@dimen/Image_Button_Size"
+        android:id="@+id/setWallPaperIBT"
+        android:background="@drawable/wallpaper_image_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:visibility="invisible"
+        android:contentDescription="@string/wallpaper_imagebutton_content_description" />
+
+    <ImageButton
+        android:layout_width="@dimen/Image_Button_Size"
+        android:layout_height="@dimen/Image_Button_Size"
+        android:id="@+id/saveWallPaperIBT"
+        android:background="@drawable/save_image_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:visibility="invisible"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/save_imagebutton_content_description"/>
+
+    <ImageButton
+    android:layout_width="@dimen/Image_Button_Size"
+    android:layout_height="@dimen/Image_Button_Size"
+    android:id="@+id/settingsIBT"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/settings_image_button"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:visibility="invisible"
+    android:contentDescription="@string/settings_imagebutton_content_description"/>
+
+    <ImageButton
+        android:layout_width="@dimen/Image_Button_Size"
+        android:layout_height="@dimen/Image_Button_Size"
+        android:id="@+id/helpIBT"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/faq_image_button"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:visibility="invisible"
+        android:contentDescription="@string/settings_imagebutton_content_description"/>
+
+
+
+</RelativeLayout>

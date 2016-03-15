@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="bfergus.Terra_Wallpapers.Settings.SettingsActivity">
+    <item
+        android:id="@+id/myswitch"
+        android:title=""
+        app:showAsAction="always"
+        app:actionLayout="@layout/custom_layout_switch" />
+</menu>

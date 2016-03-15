@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="mainActivityTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+    </style>
+
+    <style name="settingsTheme" parent ="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:textColorPrimary">@color/primaryText</item>
+    </style>
+
+    <style name="faqTheme" parent ="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:textColorPrimary">@color/primaryText</item>
+    </style>
+
+</resources>
