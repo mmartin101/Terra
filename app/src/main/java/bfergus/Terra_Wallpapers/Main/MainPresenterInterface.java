@@ -1,20 +1,20 @@
 package bfergus.Terra_Wallpapers.Main;
 
 import bfergus.Terra_Wallpapers.SubReddit;
-import retrofit.Call;
-import retrofit.Retrofit;
+import retrofit2.Call;
+import retrofit2.Retrofit;
 
 
 public interface MainPresenterInterface {
-     void retrieveImage(SubReddit subReddit);
+    void retrieveImage(SubReddit subReddit);
 
-     Call selectSubreddit(SubReddit subReddit, Retrofit retrofit);
+    Call selectSubreddit(SubReddit subReddit, Retrofit retrofit);
 
-        void addImageToGallery();
+    void addImageToGallery();
 
-     void onResume();
+    void onResume();
 
-     void onDestroy();
+    void onDestroy();
 
     void startWallpaperLoader();
 }

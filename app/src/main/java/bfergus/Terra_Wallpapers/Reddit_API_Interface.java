@@ -1,8 +1,8 @@
 package bfergus.Terra_Wallpapers;
 
 import bfergus.Terra_Wallpapers.Model.Reddit_API_Model;
-import retrofit.Call;
-import retrofit.http.GET;
+import retrofit2.Call;
+import retrofit2.http.GET;
 
 
 public interface Reddit_API_Interface {

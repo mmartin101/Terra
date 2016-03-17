@@ -14,18 +14,18 @@ import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.target.Target;
-import com.squareup.okhttp.Cache;
-import com.squareup.okhttp.OkHttpClient;
 
 
 import bfergus.Terra_Wallpapers.Model.Reddit_API_Model;
 import bfergus.Terra_Wallpapers.Reddit_API_Interface;
 import bfergus.Terra_Wallpapers.SubReddit;
-import retrofit.Call;
-import retrofit.Callback;
-import retrofit.GsonConverterFactory;
-import retrofit.Response;
-import retrofit.Retrofit;
+import okhttp3.Cache;
+import okhttp3.OkHttpClient;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class SetWallpaperService extends IntentService {
@@ -97,13 +97,13 @@ public class SetWallpaperService extends IntentService {
         Call<Reddit_API_Model> mCall = selectSubreddit(subReddit, retrofit);
         mCall.enqueue(new Callback<Reddit_API_Model>() {
             @Override
-            public void onResponse(Response<Reddit_API_Model> response) {
+            public void onResponse(Call<Reddit_API_Model> call, Response<Reddit_API_Model> response) {
                 newsData = response.body();
                 displayImage(0);
             }
 
             @Override
-            public void onFailure(Throwable t) {
+            public void onFailure(Call<Reddit_API_Model> call, Throwable t) {
             }
         });
     }
@@ -117,10 +117,10 @@ public class SetWallpaperService extends IntentService {
     }
 
     private OkHttpClient createCache() {
-        OkHttpClient client = new OkHttpClient();
         Cache cache = new Cache(getApplicationContext().getCacheDir(), 1024 * 1024 * 10);
-        client.setCache(cache);
-        return client;
+        OkHttpClient.Builder clientBuilder = new OkHttpClient.Builder();
+        clientBuilder.cache(cache);
+        return clientBuilder.build();
     }
 
     public Call<Reddit_API_Model> selectSubreddit(SubReddit subReddit, Retrofit retrofit) {
